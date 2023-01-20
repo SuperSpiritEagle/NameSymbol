@@ -8,19 +8,19 @@ namespace NameOutput
         {
             string setName;
             string setSymbol;
-            int quantity = 0;
-            int addTwo = 2;
-
+            int sum = 0;
+        
             Console.WriteLine("Введите ваше имя");
             setName = Console.ReadLine();
-            quantity += addTwo + setName.Length;
 
             Console.WriteLine("Введите символ");
             setSymbol = Console.ReadLine();
-     
+
+            sum += (setSymbol.Length + setSymbol.Length) + setName.Length;
+
             Console.Clear();
 
-            for (int i = 0; i < quantity; i++)
+            for (int i = 0; i < sum; i++)
             {
                 Console.Write($"{setSymbol}");
             }
@@ -33,7 +33,7 @@ namespace NameOutput
             Console.Write(setSymbol);
             Console.WriteLine();
 
-            for (int i = 0; i < quantity; i++)
+            for (int i = 0; i < sum; i++)
             {
                 Console.Write($"{setSymbol}");
             }
